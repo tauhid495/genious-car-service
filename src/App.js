@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './pages/Shared/Footer/Footer';
@@ -8,13 +8,13 @@ import Header from './pages/Shared/Header/Header';
 import Register from './pages/register/Register';
 import Login from './pages/Login/Login';
 import LogOut from './pages/Login/LogOut';
-import { Carousel } from 'bootstrap';
+
 import ServiceDetail from './pages/Home/service/ServiceDetail';
 import NotFound from './pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
-    <div className="App">
+    <div className=" ">
       <Header />
 
       <Routes>
