@@ -1,10 +1,11 @@
 import React from 'react';
+import NewCarousel from '../../newcarousel/NewCarousel';
 import Services from '../services/Services';
 
 const Home = () => {
     return (
         <div>
-            <p>This is home page</p>
+            <NewCarousel />
             <Services />
         </div>
     );
