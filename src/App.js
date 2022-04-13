@@ -10,6 +10,7 @@ import Login from './pages/Login/Login';
 import LogOut from './pages/Login/LogOut';
 import { Carousel } from 'bootstrap';
 import ServiceDetail from './pages/Home/service/ServiceDetail';
+import NotFound from './pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/register' element={<Register />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/logout' element={<LogOut />}></Route>
+        <Route path='*' element={<NotFound />}></Route>
       </Routes>
 
       <Footer />

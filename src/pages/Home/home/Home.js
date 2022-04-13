@@ -5,8 +5,11 @@ import Services from '../services/Services';
 const Home = () => {
     return (
         <div>
-            <NewCarousel />
-            <Services />
+            <NewCarousel /> <br />
+            <Services /> <br />
+            <div id='newcarosel'>
+                <NewCarousel />
+            </div>
         </div>
     );
 };
