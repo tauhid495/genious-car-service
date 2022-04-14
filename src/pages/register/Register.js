@@ -43,7 +43,7 @@ const Register = () => {
         <div className='mt-5 container w-50 mx-auto'>
             <div className='border rounded-3 p-5 shadow'>
                 <h2 className='text-primary text-center'>Please Register</h2>
-                <Form onClick={handleSubmit}>
+                <Form >
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Your Name</Form.Label>
                         <Form.Control ref={nameRef} type="text" placeholder="Enter Your Name" required />
@@ -66,7 +66,7 @@ const Register = () => {
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
-                    <Button className='' variant="primary" type="submit">
+                    <Button onClick={handleSubmit} className='' variant="primary" type="submit">
                         Submit
                     </Button>
                     <p>Already have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none' >Please Login</Link > </p>
