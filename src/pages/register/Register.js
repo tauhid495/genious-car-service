@@ -64,7 +64,7 @@ const Register = () => {
                         <Form.Control ref={passWordRef} type="password" placeholder="Password" required />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
+                        <Form.Check type="checkbox" label="Agree with Genious Cars terms and conditions" />
                     </Form.Group>
                     <Button onClick={handleSubmit} className='' variant="primary" type="submit">
                         Submit

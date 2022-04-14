@@ -65,7 +65,7 @@ const Login = () => {
                         Login
                     </Button>
                     <p>New to Genious Car? <Link to='/register' className='text-danger pe-auto text-decoration-none' >Please Register</Link > </p>
-                    <p>Forget your password? <Link to='/register' onClick={resetPassword} className='text-danger pe-auto text-decoration-none' >Reset Password</Link > </p>
+                    <p>Forget your password? <Link to='/home' onClick={resetPassword} className='text-danger pe-auto text-decoration-none' >Reset Password</Link > </p>
 
                     <SocialLogin />
                 </Form>

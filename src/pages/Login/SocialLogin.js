@@ -20,7 +20,7 @@ const SocialLogin = () => {
             <p className='text-danger'>Error: {error?.message}{error1?.message}</p>
         </div>
     }
-    if (loading) {
+    if (loading || loading1) {
         loading2 = <p>Loading...</p>;
     }
     if (user || user1) {
