@@ -9,15 +9,17 @@ import Register from './pages/register/Register';
 import Login from './pages/Login/Login';
 import LogOut from './pages/Login/LogOut';
 
-import ServiceDetail from './pages/Home/service/ServiceDetail';
+import ServiceDetail from './pages/serviceDetail/ServiceDetail';
 import NotFound from './pages/Shared/NotFound/NotFound';
+import CheckOut from './pages/CheckOut/CheckOut';
+import RequireAuth from './pages/Login/RequireAuth';
 
 function App() {
   return (
     <div className=" ">
-      <Header />
+      <Header className='order-1' />
 
-      <Routes>
+      <Routes order-last>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail />}></Route>
@@ -25,6 +27,11 @@ function App() {
         <Route path='/register' element={<Register />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/logout' element={<LogOut />}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <CheckOut />
+          </RequireAuth>
+        }></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
 
